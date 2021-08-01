@@ -1,0 +1,26 @@
+header{
+position: absolute;
+width: 100%;
+top: 64px;
+height: 57px;
+#logo{
+    background-image: url(/starter-code/assets/shared/logo.svg);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 165px;
+    top: 9px;
+  }
+  button{
+    margin-left: 1100px;
+    width: 175px;
+    height: 58px;
+    font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: hsla(220, 50%, 17%, 1);
+  }
+}
