@@ -1,6 +1,130 @@
 main{
   position: absolute;
-  top: 113px;
+  top: 143px;
   display: grid;
+  grid-gap: 5px;
+  width: 100%;
+  height: 990px;
   margin-top: 15px;
+  grid-template-areas: 'lb tk tk kb kb rb'
+                       'lb rk gk gk mw rb';
+
+  #left-side-bar{
+    grid-area: lb;
+    border: $-border;
+    position: absolute;
+    width: 135.8px;
+    height: 100%;
+  }
+  #typemaster{
+    grid-area: tk;
+    position: absolute;
+    width: 445px;
+    height: 312px;
+    left: -74px;
+    top: 123px;
+    h1{
+      font-family: Barlow;
+      font-size: 56px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 56px;
+      letter-spacing: 0px;
+      text-align: left;
+      text-transform: uppercase;
+
+    }
+    p{
+      font-family: Barlow;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: 0px;
+      text-align: left;
+      margin-bottom: 30px;
+      font-size: 18px;
+      color: hsla(221, 23%, 58%, 1);
+      ;
+    }
+    button{
+      height: 58px;
+      width: 175px;
+      left: 0px;
+      top: 254px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      font-family: Barlow;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 26px;
+      letter-spacing: 0px;
+      position: absolute;
+      background-color: hsla(22, 88%, 52%, 1);
+      color: #ffffff;
+      border: none;
+      
+    }
+    #releaseOn{
+      margin-left: 214px;
+      margin-top: 81px;
+      text-transform: uppercase;
+    }
+
+  }
+  #keyboard{
+    grid-area: kb;
+    border: $-border;
+    background-image: url(/starter-code/assets/mobile/image-keyboard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 540px;
+    height: 480px;
+    border-radius: $-border-radius;
+    background-size: contain;
+  }
+  #phone-and-keyboard{
+    grid-area: rk;
+    border: $-border;
+    background-image: url(/starter-code/assets/desktop/image-phone-and-keyboard.jpg);
+    width: 255px;
+    height: 480px;
+    mix-blend-mode: multiply;
+    opacity: 0.75;
+    position: absolute;
+    left: -70px;
+    border-radius: $-border-radius;
+    background-size: contain;
+
+  }
+  #glass-and-keyboard{
+    grid-area: gk;
+    border: $-border;
+    position: absolute;
+    width: 445px;
+    height: 480px;
+    background-image: url(/starter-code/assets/desktop/image-glass-and-keyboard.jpg);
+    left: -40px;
+    border-radius: $-border-radius;
+    background-size: contain;
+
+  }
+  #text-box{
+    grid-area: mw;
+    border: $-border;
+    position: absolute;
+    width: 255px;
+    height: 265px;
+
+  }
+  #right-side-bar{
+    grid-area: rb;
+    border: $-border;
+    position: absolute;
+    width: 135.8px;
+    float: right;
+    height: 100%;
+    left: 98px;
+  }
 }
