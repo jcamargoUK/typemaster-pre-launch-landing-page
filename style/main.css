@@ -75,7 +75,6 @@ main #typemaster #releaseOn {
 }
 main #keyboard {
   grid-area: kb;
-  border: 1px solid;
   background-image: url(/starter-code/assets/mobile/image-keyboard.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -87,20 +86,19 @@ main #keyboard {
 }
 main #phone-and-keyboard {
   grid-area: rk;
-  border: 1px solid;
+  background: #f06819;
   background-image: url(/starter-code/assets/desktop/image-phone-and-keyboard.jpg);
   width: 255px;
   height: 480px;
-  mix-blend-mode: multiply;
   opacity: 0.75;
   position: absolute;
   left: -70px;
   border-radius: 15px;
   background-size: contain;
+  background-blend-mode: multiply;
 }
 main #glass-and-keyboard {
   grid-area: gk;
-  border: 1px solid;
   position: absolute;
   width: 445px;
   height: 480px;
@@ -111,10 +109,31 @@ main #glass-and-keyboard {
 }
 main #text-box {
   grid-area: mw;
-  border: 1px solid;
   position: absolute;
   width: 255px;
   height: 265px;
+  left: 10px;
+  top: 120px;
+}
+main h2 {
+  font-family: Barlow;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-transform: uppercase;
+}
+main p {
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #7b8bad;
 }
 main #right-side-bar {
   grid-area: rb;
