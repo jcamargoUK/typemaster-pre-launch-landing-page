@@ -3,6 +3,23 @@
   top: 1354px;
   display: flex;
 }
+.flex article {
+  height: 323px;
+  width: 255px;
+}
+.flex .icon {
+  width: 65px;
+  height: 65px;
+  background-color: #f06819;
+  background-repeat: no-repeat;
+}
+.flex #highComp {
+  margin-left: 183px;
+}
+.flex #icon-compatible {
+  background-image: url(/starter-code/assets/shared/icon-compatible.svg);
+  position: inherit;
+}
 
 main {
   position: absolute;
@@ -112,8 +129,11 @@ main #text-box {
   position: absolute;
   width: 255px;
   height: 265px;
-  left: 10px;
+  left: 50px;
   top: 120px;
+}
+main #text-box p {
+  padding-right: 5px;
 }
 main h2 {
   font-family: Barlow;
