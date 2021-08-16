@@ -17,8 +17,10 @@
   margin-left: 183px;
 }
 .flex #icon-compatible {
-  background-image: url(/starter-code/assets/shared/icon-compatible.svg);
   position: inherit;
+}
+.flex .iconics {
+  background-image: url(/starter-code/assets/shared/icon-compatible.svg);
 }
 
 main {
