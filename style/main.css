@@ -257,22 +257,41 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-  #logo {
-    left: 49px !important;
+  main {
+    grid-template-areas: "tk tk kb kb" "rk gk gk gk" "mw mw mw mw" !important;
+  }
+  main #left-side-bar {
+    display: none !important;
+  }
+  main #right-side-bar {
+    display: none !important;
   }
 
-  button {
-    margin-left: 553px !important;
+  header #logo {
+    left: 39px !important;
+  }
+  header button {
+    margin-left: 447px !important;
   }
 
   #typemaster h1 {
     font-size: 48px !important;
     line-height: 48px !important;
-    margin-bottom: 34px !important;
+    margin-left: 112px !important;
   }
   #typemaster p {
-    font-size: 16px !important;
     width: 339px !important;
+    margin-left: 112px !important;
+  }
+  #typemaster #keyboard {
+    height: 425px !important;
+  }
+
+  #text-box {
+    display: flex !important;
+    width: 80% !important;
+    height: 108px !important;
+    margin: auto !important;
   }
 }
 * {
