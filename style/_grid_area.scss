@@ -102,13 +102,12 @@ main{
     background-image: url(/starter-code/assets/desktop/image-phone-and-keyboard.jpg);
     width: 255px;
     height: 480px;
-    opacity: 0.75;
+    // opacity: 0.75;
     position: absolute;
     left: -70px;
     border-radius: $-border-radius;
     background-size: contain;
-    background-blend-mode: multiply;
-    
+    background-blend-mode: multiply;  
   }
   #glass-and-keyboard{
     grid-area: gk;
