@@ -5,13 +5,20 @@
 }
 .flex article {
   height: 323px;
-  width: 255px;
+  width: 254px;
+  padding-right: 20px;
+}
+.flex article p {
+  color: #7b8cad;
+}
+.flex article h2 {
+  margin-bottom: 20px;
 }
 .flex .icon {
   width: 65px;
   height: 65px;
   background-color: #f06819;
-  background-repeat: no-repeat;
+  border-radius: 10px;
 }
 .flex #highComp {
   margin-left: 183px;
@@ -20,7 +27,36 @@
   position: inherit;
 }
 .flex .iconics {
+  position: absolute;
+  top: 24px;
+  margin-left: 19px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.flex .iconics1 {
   background-image: url(/starter-code/assets/shared/icon-compatible.svg);
+  width: 25.14px;
+  height: 20.24px;
+}
+.flex .iconics2 {
+  background-image: url(/starter-code/assets/shared/icon-bluetooth.svg);
+  width: 17.68px;
+  height: 27.86px;
+  top: 20px;
+  margin-left: 21px;
+}
+.flex .iconics3 {
+  background-image: url(/starter-code/assets/shared/icon-battery.svg);
+  width: 31.99px;
+  height: 20px;
+  margin-left: 18px;
+}
+.flex .iconics4 {
+  background-image: url(/starter-code/assets/shared/icon-light.svg);
+  width: 32px;
+  height: 32px;
+  top: 16px;
+  margin-left: 16px;
 }
 
 main {
@@ -35,10 +71,17 @@ main {
 }
 main #left-side-bar {
   grid-area: lb;
-  border: 1px solid;
   position: absolute;
   width: 135.8px;
   height: 100%;
+}
+main #left-side-bar p {
+  position: absolute;
+  width: 135px;
+  height: 236px;
+  bottom: 10px;
+  background-color: #E8EFF2;
+  border-radius: 0 20px 20px 0;
 }
 main #typemaster {
   grid-area: tk;
@@ -87,12 +130,17 @@ main #typemaster button {
   color: #ffffff;
   border: none;
 }
+main #typemaster button:hover {
+  background-color: #FF9B62;
+  cursor: pointer;
+}
 main #typemaster #releaseOn {
   margin-left: 214px;
   margin-top: 81px;
   text-transform: uppercase;
 }
 main #keyboard {
+  left: 16px;
   grid-area: kb;
   background-image: url(/starter-code/assets/mobile/image-keyboard.jpg);
   background-repeat: no-repeat;
@@ -192,11 +240,21 @@ header button {
   line-height: 26px;
   text-transform: uppercase;
   color: #162441;
+  border-radius: 8px;
+  border: none;
+}
+header button:hover {
+  background-color: #162542;
+  color: white;
+  cursor: pointer;
 }
 
 footer {
   position: absolute;
   top: 1805px;
+  width: 100%;
+  text-align: center;
+  color: #7b8cad;
 }
 
 * {

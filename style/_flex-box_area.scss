@@ -5,14 +5,22 @@
 
   article{
     height: 323px;
-    width: 255px;
+    width: 254px;
+    padding-right: 20px;
+
+    p{
+      color: hsla(220, 23%, 58%, 1);
+      
+    }
+    h2{
+      margin-bottom: 20px;
+    }
   }
   .icon{
     width: 65px;
     height: 65px;
     background-color: hsla(22, 88%, 52%, 1);
-    background-repeat: no-repeat;
-
+    border-radius: 10px;
   }
 
 
@@ -26,6 +34,35 @@
 
   }
   .iconics{
+    position: absolute;
+    top: 24px;
+    margin-left: 19px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+  .iconics1{
     background-image: url(/starter-code/assets/shared/icon-compatible.svg);
+    width: 25.14px;
+    height: 20.24px;
+  }
+  .iconics2{
+    background-image: url(/starter-code/assets/shared/icon-bluetooth.svg);
+    width: 17.68px;
+    height: 27.86px;
+    top: 20px;
+    margin-left: 21px;
+  }
+  .iconics3{
+    background-image: url(/starter-code/assets/shared/icon-battery.svg);
+    width: 31.99px;
+    height: 20px;
+    margin-left: 18px;
+  }
+  .iconics4{
+    background-image: url(/starter-code/assets/shared/icon-light.svg);
+    width: 32px;
+    height: 32px;
+    top: 16px;
+    margin-left: 16px;
   }
 }

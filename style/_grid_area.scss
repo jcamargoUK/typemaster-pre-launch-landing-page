@@ -11,10 +11,19 @@ main{
 
   #left-side-bar{
     grid-area: lb;
-    border: $-border;
+    // border: $-border;
     position: absolute;
     width: 135.8px;
     height: 100%;
+
+    p{
+      position: absolute;
+      width: 135px;
+      height: 236px;
+      bottom: 10px;
+      background-color: #E8EFF2;
+      border-radius: 0 20px 20px 0;
+    }
   }
   #typemaster{
     grid-area: tk;
@@ -62,8 +71,11 @@ main{
       position: absolute;
       background-color: hsla(22, 88%, 52%, 1);
       color: #ffffff;
-      border: none;
-      
+      border: none;  
+    }
+    button:hover{
+      background-color: #FF9B62;
+      cursor: pointer;
     }
     #releaseOn{
       margin-left: 214px;
@@ -73,6 +85,7 @@ main{
 
   }
   #keyboard{
+    left: 16px;
     grid-area: kb;
     background-image: url(/starter-code/assets/mobile/image-keyboard.jpg);
     background-repeat: no-repeat;

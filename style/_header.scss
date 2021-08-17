@@ -22,5 +22,12 @@ height: 57px;
     line-height: 26px;
     text-transform: uppercase;
     color: hsla(220, 50%, 17%, 1);
+    border-radius: 8px;
+    border: none;
+  }
+  button:hover{
+    background-color: #162542;
+    color: hsla(0, 0%, 100%, 1);
+    cursor: pointer;
   }
 }
